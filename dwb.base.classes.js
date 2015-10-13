@@ -1,4 +1,11 @@
+import _ from "underscore";
+import $ from "jquery";
+import Backbone from "backbone";
+import Epoxy from "backbone.epoxy";
 import Marionette from "backbone.marionette";
+import Radio from 'backbone.radio';
+
+import GridControl from "datatables";
 
 class ControllerBase extends Marionette.Controller {
     constructor(params) {
@@ -46,11 +53,6 @@ class ControllerBase extends Marionette.Controller {
     }
 }
 
-export default ControllerBase;
-
-
-import Backbone from "backbone";
-
 class CollectionBase extends Backbone.Collection {
     constructor(config, params) {
         super(config);
@@ -81,11 +83,6 @@ class CollectionBase extends Backbone.Collection {
     }
 }
 
-export default CollectionBase;
-
-import Backbone from 'backbone';
-import Epoxy from "backbone.epoxy";
-
 class ManagedModelBase extends Epoxy.Model {
     constructor(config, params) {
         super(config);
@@ -99,11 +96,6 @@ class ManagedModelBase extends Epoxy.Model {
         }
     }
 }
-
-export default ManagedModelBase;
-
-import Marionette from "backbone.marionette";
-import Radio from 'backbone.radio';
 
 class ModuleBase extends Marionette.Application {
     constructor(params, options) {
@@ -123,10 +115,6 @@ class ModuleBase extends Marionette.Application {
         this._nav_channel = value;
     }
 }
-
-export default ModuleBase;
-
-import Backbone from "backbone";
 
 class RouterBase extends Backbone.Router {
     constructor(params, options) {
@@ -157,15 +145,7 @@ class RouterBase extends Backbone.Router {
     }
 }
 
-export default RouterBase;
-
-import Marionette from "backbone.marionette";
-
 class LayoutViewBase extends Marionette.LayoutView {}
-
-export default LayoutViewBase;
-
-import Backbone from "backbone";
 
 class PageViewBase extends Backbone.View {
     constructor(config, params, template) {
@@ -173,11 +153,6 @@ class PageViewBase extends Backbone.View {
         $(config.el).html(template);
     }
 }
-
-export default PageViewBase;
-
-import Marionette from "backbone.marionette";
-import Epoxy from "backbone.epoxy";
 
 class DisplayComponentBase extends Marionette.ItemView {
 
@@ -245,12 +220,6 @@ class DisplayComponentBase extends Marionette.ItemView {
         Marionette.View.prototype.bindUIElements.apply(this, arguments);
     }
 }
-
-export default DisplayComponentBase;
-
-
-import Marionette from "backbone.marionette";
-import Epoxy from "backbone.epoxy";
 
 class FormComponentBase extends Marionette.ItemView {
 
@@ -326,14 +295,6 @@ class FormComponentBase extends Marionette.ItemView {
         Marionette.View.prototype.bindUIElements.apply(this, arguments);
     }
 }
-
-export default FormComponentBase;
-
-import Backbone from "backbone";
-
-import "../theme/jquery.dataTables.min.css!";
-import _ from "underscore";
-import GridControl from "datatables";
 
 class GridComponentBase extends Backbone.View {
     constructor(config, params, template) {
@@ -485,11 +446,17 @@ class GridComponentBase extends Backbone.View {
     }
 }
 
-export default GridComponentBase;
-
-import Marionette from "backbone.marionette";
-import Epoxy from "backbone.epoxy";
-
 class NavComponentBase extends Marionette.ItemView {}
 
-export default NavComponentBase;
+export { CollectionBase,
+ ControllerBase,
+ DisplayComponentBase,
+ FormComponentBase,
+ GridComponentBase,
+ LayoutViewBase,
+ ManagedModelBase,
+ ModuleBase,
+ NavComponentBase,
+ PageViewBase,
+ RouterBase
+}
