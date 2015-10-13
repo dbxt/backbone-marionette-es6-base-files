@@ -1,4 +1,13 @@
 {
-	"main": "dwb.base.classes.js",
-	"name": "dwb.base.classes"
+  "main": "dwb.base.classes.js",
+  "version": "0.0.1",
+  "name": "dwb.base.classes",
+  "author": "David Wayne Baxter <david@davidwaynebaxter.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dbxt/backbone-marionette-es6-base-files"
+  },
+  "files": [
+    "dwb.base.classes.js"
+  ]
 }
