@@ -1,21 +1,34 @@
 {
-  "main": "dwb.base.classes",
-  "registry": "jspm",
-  "format": "es6",
-  "version": "0.0.1",
   "name": "dwb.base.classes",
-  "author": "David Wayne Baxter <david@davidwaynebaxter.com>",
-  "jspm": {
-    "main": "dwb.base.classes"
+  "description": "Base classes for ES6 projects using Backbone, Marionette, and Datatables",
+  "version": "0.0.1",
+  "homepage": "https://github.com/dbxt/backbone-marionette-es6-base-files",
+  "main": "dwb.base.classes.js",
+  "keywords": [
+    "backbone",
+    "marionette",
+    "es6",
+    "base"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/dbxt/backbone-marionette-es6-base-files/blob/master/LICENSE"
+    }
+  ],
+  "author": {
+    "name": "David Wayne Baxter",
+    "email": "david@davidwaynebaxter.com",
+    "web": "http://www.davidwaynebaxter.com"
+  },
+  "bugs": {
+    "url": "https://github.com/dbxt/backbone-marionette-es6-base-files/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dbxt/backbone-marionette-es6-base-files"
+    "url": "https://github.com/dbxt/backbone-marionette-es6-base-files.git"
   },
-  "files": [
-    "dwb.base.classes.js"
-  ],
-
+  "github": "https://github.com/dbxt/backbone-marionette-es6-base-files",
   "dependencies": {
     "backbone": "npm:backbone@^1.2.3",
     "backbone.babysitter": "github:marionettejs/backbone.babysitter@^0.1.10",
