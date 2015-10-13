@@ -1,8 +1,13 @@
 {
-  "main": "dwb.base.classes.js",
+  "main": "dwb.base.classes",
+  "registry": "jspm",
+  "format": "es6",
   "version": "0.0.1",
   "name": "dwb.base.classes",
   "author": "David Wayne Baxter <david@davidwaynebaxter.com>",
+  "jspm": {
+    "main": "dwb.base.classes"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/dbxt/backbone-marionette-es6-base-files"
@@ -10,6 +15,7 @@
   "files": [
     "dwb.base.classes.js"
   ],
+
   "dependencies": {
     "backbone": "npm:backbone@^1.2.3",
     "backbone.babysitter": "github:marionettejs/backbone.babysitter@^0.1.10",
