@@ -2,7 +2,7 @@ import _ from "underscore";
 import $ from "jquery";
 import Backbone from "backbone";
 import Epoxy from "backbone.epoxy";
-import Marionette from "backbone.marionette";
+import Marionette from "marionette";
 import Radio from 'backbone.radio';
 
 import GridControl from "datatables";

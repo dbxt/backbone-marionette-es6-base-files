@@ -1,4 +1,4 @@
 {
-	"main": false,
+	"main": "dwb.base.classes.js",
 	"name": "dwb.base.classes"
 }
