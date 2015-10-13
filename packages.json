@@ -1,6 +1,6 @@
 {
   "name": "dwb.base.classes",
   "jspm": {
-    "main": "jspm-main"
+    "main": "false"
   }
 }
